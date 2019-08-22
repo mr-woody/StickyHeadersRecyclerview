@@ -19,11 +19,12 @@ buildscript {
 
 allprojects {
     repositories {
+        maven{ url "http://10.60.0.100:8081/repository/okayclient_snapshot/"}
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         google()
         jcenter()
-        maven{ url "http://10.60.0.100:8081/repository/okayclient/"}
+
     }
 }
 
