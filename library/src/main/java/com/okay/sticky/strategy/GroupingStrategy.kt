@@ -8,7 +8,6 @@ import com.okay.sticky.callback.StickyCallback
 
 import java.util.ArrayList
 import java.util.Arrays
-import kotlin.Function as Function1001
 
 /**
  * Created by Administrator on 2017/5/20.
@@ -87,7 +86,7 @@ class GroupingStrategy<T> {
 
     fun <R> map(func: Action<R, T>): List<R> {
         return indexItems
-                .map { this.adapter.getItem(it) }
+                .map { this.adapter.getItems()[it] }
                 .mapTo(ArrayList<R>()) { func.call(it) }
     }
 

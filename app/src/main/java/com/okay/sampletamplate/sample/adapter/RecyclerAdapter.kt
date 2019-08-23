@@ -67,7 +67,7 @@ class RecyclerAdapter(items: List<Item>) : RecyclerView.Adapter<RecyclerAdapter.
         } else {
             holder.itemView.setPadding(0, 0, 0, 0)
         }
-        if (groupingStrategy!!.isGroupIndex(position)) {
+        if (groupingStrategy.isGroupIndex(position)) {
             holder.itemView.setBackgroundColor(Color.CYAN)
         } else {
             holder.itemView.setBackgroundColor(Color.TRANSPARENT)
@@ -90,10 +90,6 @@ class RecyclerAdapter(items: List<Item>) : RecyclerView.Adapter<RecyclerAdapter.
 
     override fun getItems(): List<Item> {
         return data
-    }
-
-    override fun getItem(position: Int): Item? {
-        return data[position]
     }
 
 

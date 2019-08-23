@@ -25,9 +25,9 @@ class Sample1Activity : AppCompatActivity() {
         adapter = RecyclerAdapter(ItemGenerator.demoList())
 
         val layoutManager = SimpleStickyLayoutManager(this, adapter)
-        layoutManager.elevateHeaders(false) // Default elevation of 5dp
+        //layoutManager.elevateHeaders(true) // Default elevation of 5dp
         // You can also specify a specific dp for elevation
-        layoutManager.elevateHeaders(0)
+        //layoutManager.elevateHeaders(0)
         recycler_view.layoutManager = layoutManager
         recycler_view.adapter = adapter
         layoutManager.setStickyHeaderListener(object : StickyHeaderListener {
