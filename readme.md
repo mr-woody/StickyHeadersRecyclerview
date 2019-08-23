@@ -13,7 +13,7 @@
 ### 演示下载
 [*Sample Apk*](http://git.okjiaoyu.cn/stu/stickyheadersrecyclerview/raw/master/apk/app-debug.apk)
 
-### 三、AutoFlowLayout使用
+### 三、StickyHeadersRecyclerview使用
 
 #### 1.添加依赖
 
@@ -56,7 +56,7 @@ RecyclerView 的父布局，暂时只支持FrameLayout和CoordinatorLayout
 **代码设置数据**
 ```
 
-val layoutManager = SimpleStickyLayoutManager(this, adapter)
+val layoutManager = StickyLayoutManager(this, adapter)
 layoutManager.elevateHeaders(false) // Default elevation of 5dp
 // You can also specify a specific dp for elevation
 layoutManager.elevateHeaders(0)
