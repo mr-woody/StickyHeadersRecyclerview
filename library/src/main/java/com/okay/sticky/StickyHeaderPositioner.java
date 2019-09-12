@@ -192,12 +192,16 @@ final class StickyHeaderPositioner {
      */
     private int getHeaderPositionToShow(int firstVisiblePosition, @Nullable View headerForPosition) {
         int headerPositionToShow = INVALID_POSITION;
+
+        if(headerPositions==null || (null!=headerPositions && headerPositions.size()<=0)) return headerPositionToShow;
+
         if (headerIsOffset(headerForPosition)) {
             int offsetHeaderIndex = headerPositions.indexOf(firstVisiblePosition);
             if (offsetHeaderIndex > 0) {
                 return headerPositions.get(offsetHeaderIndex - 1);
             }
         }
+
         for (Integer headerPosition : headerPositions) {
             if (headerPosition <= firstVisiblePosition) {
                 headerPositionToShow = headerPosition;

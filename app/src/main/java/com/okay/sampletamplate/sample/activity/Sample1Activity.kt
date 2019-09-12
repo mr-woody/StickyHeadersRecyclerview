@@ -2,7 +2,6 @@ package com.okay.sampletamplate.sample.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -10,7 +9,6 @@ import com.okay.sampletamplate.sample.ItemGenerator
 import com.okay.sampletamplate.sample.R
 import com.okay.sampletamplate.sample.SimpleStickyLayoutManager
 import com.okay.sampletamplate.sample.adapter.RecyclerAdapter
-import com.okay.sticky.StickyLayoutManager
 import com.okay.sticky.exposed.StickyHeaderListener
 import kotlinx.android.synthetic.main.activity_demo1.*
 
@@ -25,6 +23,7 @@ class Sample1Activity : AppCompatActivity() {
         adapter = RecyclerAdapter(ItemGenerator.demoList())
 
         val layoutManager = SimpleStickyLayoutManager(this, adapter)
+        //val layoutManager = SimpleStickyLayoutManager(this, null)
         //layoutManager.elevateHeaders(true) // Default elevation of 5dp
         // You can also specify a specific dp for elevation
         //layoutManager.elevateHeaders(0)

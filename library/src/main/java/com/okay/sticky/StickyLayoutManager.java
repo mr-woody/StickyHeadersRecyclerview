@@ -35,7 +35,6 @@ public class StickyLayoutManager extends LinearLayoutManager {
     }
 
     private void init(StickyCallback stickyCallback) {
-        Preconditions.checkNotNull(stickyCallback, "StickyCallback == null");
         this.stickyCallback = stickyCallback;
     }
 
@@ -161,6 +160,8 @@ public class StickyLayoutManager extends LinearLayoutManager {
 
     private void cacheHeaderPositions() {
         headerPositions.clear();
+        //当stickyCallback为空的时候，不做处理
+        if(null == stickyCallback) return;
         List<?> adapterData = stickyCallback.getItems();
         if (adapterData == null) {
             if (positioner != null) {

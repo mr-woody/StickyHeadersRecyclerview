@@ -29,7 +29,7 @@ allprojects {
 ②.在build.gradle 文件中添加依赖
 ```
 dependencies {
-	 compile 'com.okay.sticky:sticky-headers-recyclerview:1.2.0-SNAPSHOT'
+	 compile 'com.okay.sticky:sticky-headers-recyclerview:1.2.1-SNAPSHOT'
 }
 ```
 

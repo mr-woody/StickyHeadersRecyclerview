@@ -36,7 +36,7 @@ task clean(type: Delete) {
 ext {
     //remote repository information
     user="yuetao"
-    version='1.2.0-SNAPSHOT'
+    version='1.2.1-SNAPSHOT'
     group_id="com.okay.sticky"
     artifact_id="sticky-headers-recyclerview"
     description="Android kotlin StickyHeadersRecyclerview library"
