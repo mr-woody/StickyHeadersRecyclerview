@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion project.compileSdkVersion as int
     defaultConfig {
-        applicationId "com.okay.sampletamplate.sample"
+        applicationId "com.woodys.sampletamplate.sample"
         minSdkVersion project.minSdkVersion
         targetSdkVersion project.targetSdkVersion
         versionCode 1
@@ -36,5 +36,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(path: ':templates')
     implementation project(path: ':library')
-    //implementation 'com.okay.sticky:sticky-headers-recyclerview:1.1.0-SNAPSHOT'
+    //implementation 'com.woodys.sticky:sticky-headers-recyclerview:1.1.0-SNAPSHOT'
 }

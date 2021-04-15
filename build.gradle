@@ -5,12 +5,16 @@ buildscript {
     ext.buildToolsVersion = project.buildToolsVersion
 
     repositories {
+        maven { url "https://jitpack.io" }
         google()
         jcenter()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$buildToolsVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath "com.github.dcendents:android-maven-gradle-plugin:2.1"
+        classpath 'com.github.mr-woody.UploadMavenPlugin:jitpack:1.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -19,7 +23,7 @@ buildscript {
 
 allprojects {
     repositories {
-        maven{ url "http://10.60.0.100:8081/repository/okayclient_snapshot/"}
+        maven { url "https://jitpack.io" }
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         google()
@@ -32,13 +36,28 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
+apply plugin: 'jitpack.io.upload'
+jitpack{
+    module{
+        //对应的library name
+        name "library"
+        //对应格式为com.github.[YourUsername],例如：https://github.com/mr-woody/UploadMavenPlugin ,那么对应的UserName为：mr-woody
+        group "com.github.mr-woody"
+    }
+    module{
+        //对应的library name
+        name "templates"
+        group "com.github.mr-woody"
+    }
+}
+
 
 ext {
     //remote repository information
     user="yuetao"
     version='1.2.1-SNAPSHOT'
-    group_id="com.okay.sticky"
+    group_id="com.woodys.sticky"
     artifact_id="sticky-headers-recyclerview"
     description="Android kotlin StickyHeadersRecyclerview library"
-    maven_url='http://10.60.0.100:8081/repository/okayclient_snapshot/'
+    maven_url='http://xxx/repository/xxx_snapshot/'
 }

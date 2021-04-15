@@ -33,8 +33,5 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${project.appCompatVersion}"
     implementation "com.android.support:design:${project.appCompatVersion}"
 }
-repositories {
-    mavenCentral()
-}
 
-apply from: "../maven.gradle"
+//apply from: "../maven.gradle"

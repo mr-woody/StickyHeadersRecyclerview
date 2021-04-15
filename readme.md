@@ -11,7 +11,7 @@
 
 
 ### 演示下载
-[*Sample Apk*](http://git.okjiaoyu.cn/stu/stickyheadersrecyclerview/raw/master/apk/app-debug.apk)
+[*Sample Apk*](/apk/app-debug.apk)
 
 ### 三、StickyHeadersRecyclerview使用
 
@@ -22,14 +22,14 @@
 allprojects {
 		repositories {
 			...
-			maven { url 'http://10.60.0.100:8081/repository/okayclient_snapshot/' }
+			maven { url 'https://jitpack.io' }
 		}
 	}
 ```
 ②.在build.gradle 文件中添加依赖
 ```
 dependencies {
-	 compile 'com.okay.sticky:sticky-headers-recyclerview:1.2.1-SNAPSHOT'
+	 compile 'com.github.mr-woody.StickyHeadersRecyclerview:library:1.0.0'
 }
 ```
 
@@ -146,8 +146,5 @@ layoutManager.setStickyHeaderListener(object : StickyHeaderListener {
 
 
 ### 其他文档
-* [ChangeLog](http://git.okjiaoyu.cn/stu/stickyheadersrecyclerview/blob/master/document/CHANGE_LOG.MD)
+* [ChangeLog](/document/CHANGE_LOG.MD)
 
-
-
-![](http://git.okjiaoyu.cn/stu/stickyheadersrecyclerview/raw/master/image/author.png)
