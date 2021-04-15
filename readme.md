@@ -29,7 +29,7 @@ allprojects {
 ②.在build.gradle 文件中添加依赖
 ```
 dependencies {
-	 compile 'com.github.mr-woody.StickyHeadersRecyclerview:library:1.0.0'
+	 compile 'com.github.mr-woody.StickyHeadersRecyclerview:library:1.0.1'
 }
 ```
 
