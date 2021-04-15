@@ -1,4 +1,4 @@
-package ccom.woodys.sticky.strategy
+package com.woodys.sticky.strategy
 
 import android.support.v7.widget.RecyclerView
 import com.woodys.sticky.callback.Action

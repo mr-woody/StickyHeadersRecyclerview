@@ -1,6 +1,6 @@
 package com.woodys.sticky.callback
 
-import ccom.woodys.sticky.strategy.GroupingStrategy
+import com.woodys.sticky.strategy.GroupingStrategy
 
 /**
  * Created by Administrator on 2017/5/20.

@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import ccom.woodys.sticky.strategy.GroupingStrategy;
+import com.woodys.sticky.strategy.GroupingStrategy;
 import com.woodys.sticky.callback.StickyCallback;
 import com.woodys.sticky.exposed.StickyHeaderListener;
 
